@@ -1,0 +1,19 @@
+﻿@page
+@model Calculator
+@{
+    ViewData["Title"] = "My view";
+}
+
+<h2>My view</h2>
+
+<form>
+    action="/Calculator/chuyendongthanhdola"
+    Dola: <input type="text" name="a" /> <br />
+    <input type="submit" value="Doi" />
+</form>
+Result
+@if (Model != null)
+{
+    @Model.result
+}
+
